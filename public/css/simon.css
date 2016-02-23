@@ -6,12 +6,17 @@ body{
 #container{
 	display:flex;
 	justify-content: center;
+	position: relative;
+	width: 100%;
 }
 
 #center{
 	z-index: 1;
-	height: 250px;
-	width: 250px;
+	top:22%;
+    left: 33%;
+    position: absolute;
+	height: 285px;
+	width: 285px;
 	border-radius: 100%;
 	background-color: black;
 }

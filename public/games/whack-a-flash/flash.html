@@ -1,0 +1,73 @@
+<!DOCTYPE html>	
+<html>
+<head>
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<link rel="stylesheet" href="/css/whackamole.css">
+	<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<title>Catch the Reverse-Flash</title>
+</head>
+<body>
+
+	<audio preload="auto" id="barry">
+		<source src="run_barry_run.mp3" type="audio/mpeg" />
+	</audio>
+	<h1>Catch the Reverse-Flash</h1>
+
+	<div id = "healthmeter">
+		<div id = "juice"></div>
+	</div>
+
+	<div id = "selectors">
+		<form  id = "difficulty" method="POST" action="/index.html">
+				<h4>Select Difficulty</h4>
+				<p>
+					<label><input type="radio" name="difficulty" value="easy" checked>Easy</label>
+					<label><input type="radio" name="difficulty" value="medium">Medium</label>
+					<label><input type="radio" name="difficulty" value="hard">Hard</label>
+				</p>
+		</form>
+
+		<form  id = "sound" method="POST" action="/index.html">
+				<h4>Do you want to play with sound?</h4>
+				<p>
+					<label><input type="radio" name="sound" value="sound" checked>Yes</label>
+					<label><input type="radio" name="sound" value="nosound" >No</label>
+				</p>
+		</form>
+	</div>
+
+	<div id = "logistics">
+		<a id= "start">Run</a>
+		<div id = "score">Score</div>
+		<div id = "timer">Timer</div>
+		<div id ="highscore">High Score</div>
+	</div>
+
+	<div class = "container-fluid" id = "mainbox">
+		<div class = "row">
+		<div class = "molehole col-md-4" id = "a"></div>
+		<div class = "molehole col-md-4" id = "b"></div>
+		<div class = "molehole col-md-4" id = "c"></div>
+		</div>
+		<div class = "row">
+		<div class = "molehole col-md-4" id = "d"></div>
+		<div class = "molehole col-md-4" id = "e"></div>
+		<div class = "molehole col-md-4" id = "f"></div>
+		</div>
+		<div class = "row">
+		<div class = "molehole col-md-4" id = "g"></div>
+		<div class = "molehole col-md-4" id = "h"></div>
+		<div class = "molehole col-md-4" id = "i"></div>
+		</div>
+
+	</div>
+
+	<div id = "lost">Not this time.</div>
+	<div id = "star_labs"></div>
+
+	<script src = "/js/jquery.js"></script>
+	<script src = "/js/jquery-ui.js"></script>
+	<script src = "/js/whackamole.js"></script>
+
+</body>
+</html>

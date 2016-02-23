@@ -1,0 +1,22 @@
+body{
+	font-family: 'Press Start 2P', cursive;
+	background-color: black;
+	color: dodgerblue;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: dodgerblue;
+}
+
+#gameList{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.gamePreview{
+	display: block;
+	margin-bottom: 10px;
+}

@@ -1,0 +1,187 @@
+body{
+	background-color: #000;
+	background-image: url(/img/shield.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#mainbox{
+	background-color: rgba(0,0,0,0.0);
+	margin-left: -13px;
+    margin-top: 22px;
+	width: 700px;
+	height: 700px;
+	border-radius: 350px;
+	padding: 10px;
+}
+.color-btn{
+	display: inline-block;
+	height: 350px;
+	width: 350px;
+	border: 1px solid black;
+}
+
+#red{
+	background-color: rgba(230,0,0, 0.2);
+	border-top-left-radius: 400px;
+}
+
+#green{
+	background-color: rgba(0,102,0, 0.2);
+	border-top-right-radius: 400px;
+}
+
+#blue{
+	background-color: rgba(0,41,166, 0.2);
+	border-bottom-left-radius: 400px;
+}
+
+#yellow{
+	background-color: rgba(255,204,0,0.2);
+	border-bottom-right-radius: 400px;
+}
+
+#start{
+	position: fixed;
+	top: 300px;
+	right: 125px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	border: 2px solid red;
+	display: inline-block;
+	background-image: url(/img/black_widow_symbol.jpg);
+	background-size: cover; 
+	text-align: center;	
+	color: #fff;
+	font-size: 1.5em;
+}
+
+.startarea{
+	position: fixed;
+	top: 200px;
+	right: 75px;
+	width: 200px;
+	height: 300px;
+	background-image: url(/img/black_widow.jpg);
+	background-size: cover;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+}
+
+a:hover{
+	color:#fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.scorearea{
+	position: fixed;
+	top: 200px;
+	left: 75px;
+	width: 200px;
+	height: 300px;
+	background-image: url(/img/hawkeye.jpg);
+	background-size: cover;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	color: white;
+	font-size: 3em;
+	top: 200px;
+	left: 85px;
+}
+
+
+.color-btn:focus, .btn:active, .btn.active, .btn:focus:active {
+ background-image: none;
+ outline: none;
+ -webkit-box-shadow: none;
+ box-shadow: none;
+}
+
+.activate{
+	background-image: url(/img/Nick_Furry.jpg);
+	background-size: cover;
+}
+
+.color-btn.active{
+	background-size: cover;
+	background-position: center;
+}
+
+#red.color-btn.active {
+	background-image: url(/img/iron-man.jpg);
+}
+
+#green.color-btn.active {
+	background-image: url(/img/the_hulk.jpg);
+}
+
+#blue.color-btn.active {
+	background-image: url(/img/captain-america-the-first-avenger.jpg);
+}
+
+#yellow.color-btn.active {
+	background-image: url(/img/thor.jpg);
+}
+
+.hydra{
+	background-color: #000;
+	background-image: url(/img/hydra.png);
+	background-size: cover;
+}
+
+.hh{
+	display: none;
+	position: fixed;
+	top: 0px;
+	width: 210px;
+	height: 100vh;
+	background-color: #000;
+	color:#CC0000;
+	font-size: 4em;
+	text-align: center;
+	font-family: Lucidatypewriter, monospace;
+}
+
+#right{
+	right: 75px;
+	padding-top: 50px;
+}
+
+#left{
+	left: 75px;
+	padding-top: 200px;
+}
+
+#ultron{
+	position: fixed;
+	display:none;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background-image: url(/img/ultron.jpg);
+	background-size: cover;
+	z-index: 999;
+	border: 2px #fff solid;
+}
+
+#replay{
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	background-image: url(/img/coulson.jpg);
+	background-size: cover;
+	display: inline-block;
+	color: #fff;
+	width: 250px;
+	height:100px;
+	font-size: 1.5em;
+	display: none;
+}
+
+
+	
