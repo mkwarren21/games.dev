@@ -9,7 +9,7 @@ canvas {
 }
 
 #gameCanvas{
-	width: 480px;
-	height:320px;
+	width: 560px;
+	height:480px;
 	background-color: papayawhip;
 }
