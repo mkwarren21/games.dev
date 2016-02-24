@@ -1,0 +1,15 @@
+* { 
+	padding: 0; 
+	margin: 0; 
+}
+    	
+canvas { 
+	display: block; 
+	margin: 0 auto; 
+}
+
+#gameCanvas{
+	width: 480px;
+	height:320px;
+	background-color: papayawhip;
+}
