@@ -7,9 +7,8 @@ canvas {
 	display: block; 
 	margin: 0 auto; 
 }
-
 #gameCanvas{
-	width: 560px;
-	height:480px;
+	width: 480px;
+	height:320px;
 	background-color: papayawhip;
 }
