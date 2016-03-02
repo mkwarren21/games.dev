@@ -12,7 +12,7 @@
 	var dx = .5;
 	var dy = -.5;
 	var ballRadius = 10;
-	var color = "green";
+	var color = "yellow";
 
 	//paddle moving and drawing
 	var paddleHeight = 10;
@@ -41,12 +41,6 @@
 	    for(var r=0; r<brickRowCount; r++) {
 			bricks[c][r] = { x: 0, y: 0, status: 1 };
 	    }
-	}
-
-	function getRandomColor(){
-		var tmp = Math.floor((Math.random() * 5) + 1)-1;
-		var a = ["red", "orange", "yellow", "green", "blue"];
-		return a[tmp];
 	}
 
 	function drawBall(color){
@@ -109,8 +103,18 @@
 		        dy = -dy;
 		    }
 		    else {
-		        alert("purple rain");
-		        document.location.reload();
+		        lives--;
+				if(!lives) {
+				    alert("GAME OVER");
+				    document.location.reload();
+				}
+				else {
+				    x = canvas.width/2;
+				    y = canvas.height-30;
+				    dx = .5;
+				    dy = -.5;
+				    paddleX = (canvas.width-paddleWidth)/2;
+				}
 		    }
 		}
 
@@ -120,7 +124,7 @@
 		else if(leftPressed && paddleX > 0) {
 		    paddleX -= 7;
 		}
-		x += dx * 2;
+		x += dx * 10;
     	y += dy;
     	requestAnimationFrame(draw);
 	}
@@ -160,23 +164,12 @@
 	            var b = bricks[c][r];
 	            if(b.status == 1) {
 	                if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
-	                    dy = -dy * (Math.random()+ 0.1);
+	                    dy = -dy;
 	                    b.status = 0;
-	                    color = getRandomColor();
 	                    score++;
 	                    if(score == brickRowCount*brickColumnCount) {
-	                        lives--;
-							if(!lives) {
-							    alert("GAME OVER");
-							    document.location.reload();
-							}
-							else {
-							    x = canvas.width/2;
-							    y = canvas.height-30;
-							    dx = .5;
-							    dy = -.5;
-							    paddleX = (canvas.width-paddleWidth)/2;
-							}
+	                        alert("You Win! YAYYY");
+	                        document.location.reload();
 	                    }
 	                }
 	            }

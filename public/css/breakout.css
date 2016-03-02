@@ -10,5 +10,7 @@ canvas {
 #gameCanvas{
 	width: 480px;
 	height:320px;
-	background-color: papayawhip;
+	background-image: url(/img/breakout_background.jpg);
+	background-position: center;
+	background-size: cover;
 }
